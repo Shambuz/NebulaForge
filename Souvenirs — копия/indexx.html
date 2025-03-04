@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Landing Page</title>
+    <link rel="stylesheet" href="mainn.css">
+</head>
+<body>
+    <div id="goBack"><a href="../index.html">На главную</a></div>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="img/Earth_Western_Hemisphere_transparent_background.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#">About Souvenirs:</a></li>
+                <li><a href="more copy.html">Los Angeles souvenir</a></li>
+                <li><a href="more.html">Paris souvenir</a></li>
+                <li><a href="more copy 3.html">Rome souvenir</a></li>
+                <li><a href="more copy 2.html">London souvenir</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What <br><span>I like</span></h2>
+                <p>Los Angeles view souvenir. Elf Tower souvenir. Coliseum and London's booth souvenir. The gang’s all here. Browse our collection, explore unique designs, and find the perfect memorabilia among our exclusive souvenirs.</p>
+                <a href="">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/Earth_Western_Hemisphere_transparent_background.png" alt="" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+                <li><img src="img/pngtree-vintage-los-angeles-retro-landscape-flat-png-image_15978452.png" onclick="imgSlide('img/pngtree-vintage-los-angeles-retro-landscape-flat-png-image_15978452.png'); changedolor('#Ffa500')"></li>
+                <li><img src="img/landmark-e2c.png" onclick="imgSlide('img/landmark-e2c.png'); changedolor('#6482AD')"></li>
+                <li><img src="img/colosseum-souvenir-model-5rprhyktnt6asop8.png" onclick="imgSlide('img/colosseum-souvenir-model-5rprhyktnt6asop8.png'); changedolor('#1e1e1e')"></li>
+                <li><img src="img/pngtree-british-red-telephone-booth-isolated-png-image_13010364.png" onclick="imgSlide('img/pngtree-british-red-telephone-booth-isolated-png-image_13010364.png'); changedolor('#CD001A')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href=""><img src="img/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="img/instagram.png" alt=""></a></li>
+            <li><a href=""><img src="img/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlide(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changedolor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+        </script>
+
+
+
+</body>
+</html>
