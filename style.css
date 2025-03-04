@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    min-height: 100%;
+    background-size: cover;
+    background-image: url(buildings-night-los-angeles.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.content{
+    position: relative;
+    width: 580px;
+    margin: 50px auto;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+}
+.content-title{
+    margin: 0;
+    padding: 20px;
+    font-size: 60px;
+    text-shadow: 0 0 10px #fff;
+}
+.menu{
+    padding: 50px 0;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.7);
+    width: 500px;
+    height: auto;
+    border-radius: 250px;
+}
+.menu li{
+    font-size: 40px;
+    display: block;
+    line-height: 66px;
+}
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px #fff;
+    transform: scale(0.8);
+    transition: all 0.4s linear;
+}
+.menu:hover li a{
+    text-shadow: 0 0 10px #fff; 
+    color: transparent;
+}
+.menu li a:hover{
+    text-shadow: none;
+    color: #fff;
+    background: rgba(126, 118, 8, 0.7);
+    transform: scale(1);
+}
+.open-modal-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+}
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+.modal-dialog{
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+    .modal-dialog{
+        max-width: 500px;
+        margin: 30px auto;
+    }
+}
+.modal-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (max-width: 768px) {
+    .modal-content {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+}
+.modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title{
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.close{
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+    text-decoration: none;
+}
+.close:focus, .close:hover{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.75;
+}
+.modal-body{
+    position: relative;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+p {
+    margin: 5px 0;
+}
+.open-modal-button {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.open-modal-button:hover {
+    background-color: #0056b3;
+}
